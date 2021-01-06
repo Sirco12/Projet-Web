@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+	<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>baskets</title>
+		<link rel="stylesheet" href="../style/menu_chaussures.css">
+	</head>
+	<body>
+        <nav>
+        	<div class="modulerecherche">
+	   			<input type="text" id="rechercher" placeholder="Rechercher" />
+	   			<a href="loupe.html"><img src="../img/index/recherche.png" class="loupeimage" alt="loupe"></a>
+	   		</div>
+
+	   		<div class="barre">
+	   			<div class="connexion"><a href="connexion.html"><img src="../img/index/connecter.jpg" alt="se connecter"></a></div>
+	   			<div><a href="panier.html"><img src="../img/index/panier.jpg" alt="panier"></a></div>
+	   		</div>
+	   		
+	   		<div class="marque">
+	   			<h3> <a href="index.html">SHOES ON ! </a></h3>
+	   		</div>
+	    	<ul>
+	        	<li class="menuhomme"><a>HOMMES</a>
+	            	<ul class="submenu">
+	              		<li><a href="baskets.html">Baskets</a></li>
+	              		<li><a href="botteshomme.html">Bottes</a></li>
+	              		<li><a href="mocassins.html">Mocassins</a></li>
+	            	</ul>
+	          	</li>
+	          	<li class="menufemme"><a>FEMMES</a>
+	           		<ul class="submenu">
+	              		<li><a href="bottesfemme.html">Bottes</a></li>
+	              		<li><a href="sandales.html">Sandales</a></li>
+	              		<li><a href="escarpins.html">Escarpins</a></li>
+	            	</ul>
+	          	</li>
+	    	</ul>
+
+      	</nav>
+
+		
+      	
+      	<main>
+      		<div class="couleur">
+				<div class="filtre">
+					<div class="demarque">
+						<h6>DEMARQUE</h6>
+						<div class="choix"><input type="checkbox" name="choix"  /> <p> 70% (370)  </p></div>
+						<div class="choix"><input type="checkbox" name="choix"  /> <p> 60% (1820) </p></div>
+						<div class="choix"><input type="checkbox" name="choix"  /> <p> 50% (5059) </p></div>
+						<div class="choix"><input type="checkbox" name="choix"  /> <p> 40% (8141) </p></div>
+						<div class="choix"><input type="checkbox" name="choix"  /> <p> 30% (5730) </p></div>
+						<div class="choix"><input type="checkbox" name="choix"  /> <p> 20% (3829) </p></div>
+						<div class="choix"><input type="checkbox" name="choix"  /> <p> 10% (1917) </p></div>
+					</div>
+					<div class="age">
+						<h6>AGE</h6>
+						<div class="choix"><input type="checkbox" name="choix"  /> <p> bébé (2132) </p></div>
+						<div class="choix"><input type="checkbox" name="choix"  /> <p> enfant (4165)  </p></div>
+						<div class="choix"><input type="checkbox" name="choix"  /> <p> ados (3424)  </p></div>
+						<div class="choix"><input type="checkbox" name="choix"  /> <p> adulte (3968)  </p></div>
+					</div>
+					<div class="marquefiltre">
+						<h6> MARQUE </h6>
+						<select name="marquefiltre" id="marquefiltre">
+							<option value="france">--CHOIX--</option>
+		           			<option value="france">ASOS</option>
+					        <option value="espagne">ADIDAS</option>
+					        <option value="italie">NIKE</option>
+					        <option value="royaume-uni">CONVERSE</option>
+					        <option value="canada">VANS</option>
+				        </select>
+	      			</div>
+	      			<div class="marquefiltre">
+						<h6> POINTURE </h6>
+						<input type="text" placeholder="41/42" id="chercher"/>
+	      			</div>
+	      			<div class="prix">
+						<h6> PRIX </h6>
+						<div class="choix"><input type="checkbox"   /> <p> 1€ / 50 €  </p></div>
+						<div class="choix"><input type="checkbox"   /> <p> 50€ / 100€ </p></div>
+						<div class="choix"><input type="checkbox"   /> <p> 100€ / 150€ </p></div>
+						<div class="choix"><input type="checkbox"   /> <p> 150€ / 200€</p></div>
+						<div class="choix"><input type="checkbox"   /> <p> 200€ / 300€ </p></div>
+						<div class="choix"><input type="checkbox"   /> <p> 300€ / 500€ </p></div>
+						<div class="choix"><input type="checkbox"   /> <p> 500e + </p></div>
+	      			</div>
+	      			<div class="matiere">
+						<h6> COULEUR </h6>
+						<input type="color" />
+					</div>
+					<div class="matiere">
+						<h6> MATIERE </h6>
+						<div class="choix"><input type="checkbox"   /> <p> Caoutchoux  </p></div>
+						<div class="choix"><input type="checkbox"   /> <p> Cuir </p></div>
+						<div class="choix"><input type="checkbox"   /> <p> Cuir verni </p></div>
+						<div class="choix"><input type="checkbox"   /> <p> Cuir / Textile </p></div>
+						<div class="choix"><input type="checkbox"   /> <p> Nubuck</p></div>
+						<div class="choix"><input type="checkbox"   /> <p> Synthétique </p></div>
+						<div class="choix"><input type="checkbox"   /> <p> Textile </p></div>
+					</div>
+					<div class="envoyer">
+						<input type="submit" value="Valider la recherche" id="envoyer"  />
+					</div>
+				</div>
+
+			
+				<div class="premiereachat"> 
+					<div class="grosachat">
+						<img src="../img/baskets/promoachat.jpg" id="image" alt="promo">
+					</div>
+
+					<div class="articles">
+						<div class="article">
+							<div class="imagevendre">
+								<img src="../img/bottesf/1.jpg" alt="premiere photo" class="unphoto">
+							</div>
+							<div class="textevendre">
+								<div class="premiereligne"><p> New </p></div>
+								<div class="deuxiemeligne"><p> Marque : BEAU TE</p><p> <span class="text_barre">259.99€</span></p></div>
+								<div class="troisiemeligne"><div class="troisiemeligneinterieur"><p> Nom chaussure : J RAFFE</p></div><p>209.99€</p></div>
+								<div class="quatriemeligne"><div class="quatriemeligneinterieur"><p> <a href="bottesf/un.html" class="voir">Voir &rsaquo;</a></p></div></div>
+							</div>
+						</div>
+						<div class="article">
+							<div class="imagevendre">
+								<img src="../img/bottesf/2.jpg" alt="premiere photo" class="unphoto">
+							</div>
+							<div class="textevendre">
+								<div class="premiereligne"><p> New </p></div>
+								<div class="deuxiemeligne"><p> Marque : CUL IRE</p><p> <span class="text_barre">219.99€</span></p></div>
+								<div class="troisiemeligne"><div class="troisiemeligneinterieur"><p> Nom chaussure : ANNIE MOT</p></div><p>189.99€</p></div>
+								<div class="quatriemeligne"><div class="quatriemeligneinterieur"><p> <a href="bottesf/deux.html" class="voir">Voir &rsaquo;</a></p></div></div>
+							</div>
+						</div>
+						<div class="article">
+							<div class="imagevendre">
+								<img src="../img/bottesf/3.jpg" alt="premiere photo" class="unphoto">
+							</div>
+							<div class="textevendre">
+								<div class="premiereligne"><p> New </p></div>
+								<div class="deuxiemeligne"><p> Marque : BEAU TE</p><p> <span class="text_barre">339.99€</span></p></div>
+								<div class="troisiemeligne"><div class="troisiemeligneinterieur"><p> Nom chaussure : MASHALLAH</p></div><p>300€</p></div>
+								<div class="quatriemeligne"><div class="quatriemeligneinterieur"><p> <a href="bottesf/trois.html" class="voir">Voir &rsaquo;</a></p></div></div>
+							</div>
+						</div>
+
+						<div class="article">
+							<div class="imagevendre">
+								<img src="../img/bottesf/4.jpg" alt="premiere photo" class="unphoto">
+							</div>
+							<div class="textevendre">
+								<div class="premiereligne"><p> New </p></div>
+								<div class="deuxiemeligne"><p> Marque : BEAU TE</p><p> <span class="text_barre">189.99€</span></p></div>
+								<div class="troisiemeligne"><div class="troisiemeligneinterieur"><p> Nom chaussure : MAIS TISSE</p></div><p>149.99€</p></div>
+								<div class="quatriemeligne"><div class="quatriemeligneinterieur"><p> <a href="bottesf/quatre.html" class="voir">Voir &rsaquo;</a></p></div></div>
+							</div>
+						</div>
+						<div class="article">
+							<div class="imagevendre">
+								<img src="../img/bottesf/5.jpg" alt="premiere photo" class="unphoto">
+							</div>
+							<div class="textevendre">
+								<div class="premiereligne"><p> New </p></div>
+								<div class="deuxiemeligne"><p> Marque : CUL IRE</p><p> <span class="text_barre">309.99€</span></p></div>
+								<div class="troisiemeligne"><div class="troisiemeligneinterieur"><p> Nom chaussure : BGETTE</p></div><p>289.99€</p></div>
+								<div class="quatriemeligne"><div class="quatriemeligneinterieur"><p> <a href="bottesf/cinq.html" class="voir">Voir &rsaquo;</a></p></div></div>
+							</div>
+						</div>
+						<div class="article">
+							<div class="imagevendre">
+								<img src="../img/bottesf/6.jpg" alt="premiere photo" class="unphoto">
+							</div>
+							<div class="textevendre">
+								<div class="premiereligne"><p> New </p></div>
+								<div class="deuxiemeligne"><p> Marque : CUL IRE</p><p> <span class="text_barre">359.99€</span></p></div>
+								<div class="troisiemeligne"><div class="troisiemeligneinterieur"><p> MASHALLAH ++ </p></div><p>309.99€</p></div>
+								<div class="quatriemeligne"><div class="quatriemeligneinterieur"><p> <a href="bottesf/six.html" class="voir">Voir &rsaquo;</a></p></div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+				
+		</main>
+
+
+		<footer>
+			<div class="element">
+				<p class="ecriture"> by Antoine ADJAMIDIS </p>
+				<p class="ecriture"> Donnez moi un 20/20 svp </p>
+				<p class="ecriture"> <a href="quisommesnous.html">About moi</a></p>
+				<p class="ecriture"> <a href="contacter.html">Contact</a></p>
+				<a href="https://twitter.com/Antoine_Lodene"><img src="../img/index/twitter.png" alt="twitter" class="image"></a>
+				<a href="https://www.facebook.com/antoine.adjamidis/"><img src="../img/index/facebook.png" alt="facebook" class="image"></a>
+				<a href="https://www.youtube.com/channel/UC1_4azVPzpcHT7ptccwd_fQ"><img src="../img/index/youtube.png" alt="youtube" class="image"></a>
+				<a href="https://www.pinterest.fr/pin/375065475221349170/"><img src="../img/index/pinterest.png" alt="pinterest" class="image"></a>
+			</div>
+		</footer>
+
+		
+	</body>
+</html>

@@ -1,0 +1,246 @@
+*{
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+h3 {
+  font-style: italic;
+  text-shadow:-0.1em -0.1em 0em white;
+  margin-top: 20px; 
+  font-size: 35px;
+}
+
+header {
+  color: black;
+}
+
+
+
+/* --------------------------- footer --------------------------*/
+
+footer {
+}
+
+.element {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.ecriture {
+  border-right: 3px solid black;
+  height: 20px;
+  margin-top: 25px;
+  padding-right: 5%;
+}
+
+.image {
+  padding-top: 15px;
+}
+
+
+img {
+  width: 50px;
+}
+/* ------------------- lien -------------------------- */
+a  {
+  text-decoration: none;
+  color: black;
+}
+
+main > div > p > a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active  {
+  color: black;
+}
+
+main > div > p > a:active  {
+  color: white;
+}
+
+
+
+/* --------------------------------- bouton valider -----------------------------*/
+
+
+
+
+.loupeimage {
+  width: 30px;
+}
+
+.modulerecherche {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+
+
+/*  -------------------------------------------- top -------------------------------------------- */
+
+.barre {
+  display: flex;
+  margin-top: 10px;
+}
+
+
+nav {
+  width: 100%;
+  font-family: 'Source code pro', Calibri, serif;
+  position: fixed;
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  float: top;
+}
+
+
+nav > ul > li > a {
+  padding: 20px 30px;
+  color: white;
+
+}
+
+/* on aligne correctement les sous menu quand on passe la souris devant */
+nav > ul  > li:hover a {
+  padding: 15px 30px 20px 30px;
+
+
+}
+
+
+nav li {
+  list-style-type: none; /*on eneleve les points*/
+
+
+}
+
+/* on met les titres cote a cote */
+nav > ul > li {
+  float: left; 
+  position: relative;
+
+
+
+}
+
+.submenu {
+  display: none; /* on fait disparaitre les sous menu / attention il faudra les faire réaparaitre */
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+
+
+}
+
+/* on re affiche les sous menu quand on pace la souris dessus */
+nav li:hover .submenu {  
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0px;
+  padding-bottom: 100px;
+  z-index: 1000;
+  background-color: black;
+
+}
+
+
+
+/* bordure qui a entre les sous menus */
+.submenu li {
+  border-bottom: 2px solid white;
+}
+
+.submenu li a {
+  padding: 15px 30px;
+    font-size: 15px;
+    color: white;
+    width: 270px;
+
+}
+
+/* on change la couleur quand on passe sa souris  dessus */
+.menuhomme:hover {
+  border-top: 5px solid #e44d26;
+  background-color: rgba(228, 77, 38, 0.15);
+}
+
+.menufemme:hover {
+  border-top: 5px solid #0070bb;
+  background-color: rgba(000, 112, 192, 0.15);
+}
+
+.menuhomme, .menufemme {
+  font-size: 25px;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
+
+
+
+
+
+    /* --------------------------- main --------------------------- */
+/* --------------------------- haut de la page ----------------------- */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+main{
+  background-image: url("../img/index/fonddeux.jpg");
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; 
+  font-family: "times New Roman ";
+}
+
+.letout {
+	margin-top: 20vh;
+	color: white;
+}
+
+.para {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	text-align: center;	
+	align-items: center;
+	height: 70vh;
+	font-size: 20px;
+
+
+}
+
+.para > p {
+	width: 30%;
+	outline: none;
+}
+
+.titre {
+	text-align: center;
+	margin-bottom: 5vh;
+	font-size: 25px;
+
+}

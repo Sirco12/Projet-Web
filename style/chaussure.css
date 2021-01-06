@@ -1,0 +1,366 @@
+* {
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+main {
+	display: flex;
+	flex-direction: column;	
+}
+
+h3 {
+  font-style: italic;
+  text-shadow:-0.1em -0.1em 0em white;
+  margin-top: 20px;	
+  font-size: 35px;
+}
+
+header {
+  color: black;
+}
+
+
+
+/* --------------------------- footer --------------------------*/
+
+footer {
+}
+
+.element {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.ecriture {
+	border-right: 3px solid black;
+	height: 20px;
+	margin-top: 25px;
+	padding-right: 5%;
+}
+
+.image {
+	padding-top: 15px;
+}
+
+
+img {
+	width: 50px;
+}
+/* ------------------- lien -------------------------- */
+a  {
+  text-decoration: none;
+  color: black;
+}
+
+main > div > p > a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active  {
+  color: black;
+}
+
+main > div > p > a:active  {
+  color: white;
+}
+
+
+
+/* --------------------------------- bouton valider -----------------------------*/
+
+
+
+
+.loupeimage {
+  width: 30px;
+}
+
+.modulerecherche {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+
+
+/*  -------------------------------------------- top -------------------------------------------- */
+
+.barre {
+  display: flex;
+  margin-top: 10px;
+}
+
+
+nav {
+  width: 100%;
+  font-family: 'Source code pro', Calibri, serif;
+  position: fixed;
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  float: top;
+}
+
+
+nav > ul > li > a {
+  padding: 20px 30px;
+  color: white;
+
+}
+
+/* on aligne correctement les sous menu quand on passe la souris devant */
+nav > ul  > li:hover a {
+  padding: 15px 30px 20px 30px;
+
+
+}
+
+
+nav li {
+  list-style-type: none; /*on eneleve les points*/
+
+
+}
+
+/* on met les titres cote a cote */
+nav > ul > li {
+  float: left; 
+  position: relative;
+
+
+
+}
+
+.submenu {
+  display: none; /* on fait disparaitre les sous menu / attention il faudra les faire réaparaitre */
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+
+
+}
+
+/* on re affiche les sous menu quand on pace la souris dessus */
+nav li:hover .submenu {  
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0px;
+  padding-bottom: 100px;
+  z-index: 1000;
+  background-color: black;
+
+}
+
+
+
+/* bordure qui a entre les sous menus */
+.submenu li {
+	border-bottom: 2px solid white;
+}
+
+.submenu li a {
+	padding: 15px 30px;
+  	font-size: 15px;
+  	color: white;
+  	width: 270px;
+
+}
+
+/* on change la couleur quand on passe sa souris  dessus */
+.menuhomme:hover {
+  border-top: 5px solid #e44d26;
+  background-color: rgba(228, 77, 38, 0.15);
+}
+
+.menufemme:hover {
+  border-top: 5px solid #0070bb;
+  background-color: rgba(000, 112, 192, 0.15);
+}
+
+.menuhomme, .menufemme {
+	font-size: 25px;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
+
+
+main{
+  background-image: url("../img/index/fonddeux.jpg");
+}
+
+
+
+    /* --------------------------- main --------------------------- */
+/* --------------------------- haut de la page ----------------------- */
+
+.haut_page, .bas_page {
+	display: flex;
+	justify-content: space-around;
+}
+
+.haut_page {
+	margin-top: 70px;
+
+}
+
+.menu_gauche, .menu_droite {
+  background-color: white;
+	margin-top: 10vh;
+  text-align: center;
+}
+
+.menu_gauche {
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 5vh;
+}
+
+.menu_droite {
+	width: 30%;
+  border: 3px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+#image_chaussure {
+	width: 500px;
+}
+
+.lignedeux {
+	display: flex;
+	justify-content: space-around;
+}
+
+.lignetrois, .lignequatre, .lignecinq, .lignesix, .lignehuit {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 2vh;
+}
+
+.ligneun {
+	text-align: center;
+	font-size: 30px;
+  margin-top: 2vh;
+}
+.bonachat {
+	width: 200px;
+	border: 3px solid white;
+}
+
+#valider {
+	background-color: green;
+	width: 100%;
+	border-radius: 10px;
+	color: white;
+}
+
+.lignesept {
+  text-align: center;
+}
+
+.lignehuit {
+  border: 1px solid blue;
+  text-align: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.lignecinq {
+  border: 2px solid orange;
+}
+
+.description {
+  width: 90%;
+  margin: auto;
+  padding-top: 15px;
+  border-top: 1px solid black;
+}
+
+
+/* --------------------- bas de la page --------------------- */
+
+.blockprincipal {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.commentaireun, .commentairedeux, .commentairetrois, .commentairequatre {
+  background-color: white;
+  width: 46%;
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.commentaireun, .commentairequatre {
+  background-color: #1B372F;
+}
+
+.commentairetrois, .commentairedeux {
+  background-color: #1B1C37;
+}
+
+.commentairegauche {
+  width: 20%;
+}
+
+.commentairedroit {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.bonhomme {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.heure_text {
+  margin-top: 45%;
+  color: white;
+}
+
+.comm {
+  margin-top: 2vh;
+  color: white;
+}
+
+.textducomm {
+  border-bottom: 2px dashed white;
+  padding-bottom: 30px;
+}
+
+.etoile {
+  color: gold;
+  font-size: 3em;
+}
+
+.avis {
+  color: white;
+  text-align: center;
+  margin-bottom: 10vh;
+}

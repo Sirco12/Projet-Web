@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Panier</title>
+		<link rel="stylesheet" href="../style/panier.css">
+	</head>
+
+	<body>
+
+		<header>
+        	<nav>
+	        	<div class="modulerecherche">
+		   			<input type="text" id="rechercher" placeholder="Rechercher"  />
+		   			<div><a href="loupe.html"><img src="../img/index/recherche.png" alt="loupe" class="loupeimage" /></a></div>
+
+		   		</div>
+
+		   		<div class="barre">
+		   			<div class="connexion"><a href="connexion.html"><img src="../img/index/connecter.jpg" alt="se connecter"></a></div>
+		   			<div><a href="panier.html"><img src="../img/index/panier.jpg" alt="panier" /></a></div>
+		   		</div>
+
+		   		<div class="marque">
+		   			<h3> <a href="index.html">SHOES ON ! </a></h3>
+		   		</div>
+
+		    	<ul>
+		        	<li class="menuhomme"><a>HOMMES</a>
+		            	<ul class="submenu">
+		              		<li><a href="baskets.html">Baskets</a></li>
+		              		<li><a href="botteshomme.html">Bottes</a></li>
+		              		<li><a href="mocassins.html">Mocassins</a></li>
+		            	</ul>
+		          	</li>
+		          	<li class="menufemme"><a>FEMMES</a>
+		           		<ul class="submenu">
+		              		<li><a href="bottesfemme.html">Bottes</a></li>
+		              		<li><a href="sandales.html">Sandales</a></li>
+		              		<li><a href="escarpins.html">Escarpins</a></li>
+		            	</ul>
+		          	</li>
+		    	</ul>
+
+      		</nav>
+		</header>
+
+      		<main>
+				<div class="topside">
+					<div class="recapargent">
+						<div class="moyenpaiement">
+							<div class="unligne">
+								<form method="post" action="execute" >
+								       <h5> Veuillez selectionner le moyen de payement :</h5>
+								    	<div class="listepayer">
+								    		<div class="paypal">
+									       		<input type="radio" name="choixpayement" value="paypal" class="appuyer" /> <img src="../img/panier/paypal.png" alt="paypal" class="imagepayer">
+									       	</div>
+									       	<div class="mastercard">
+											    <input type="radio" name="choixpayement" value="mastercard" class="appuyer"  /> <img src="../img/panier/mastercard.png" alt="mastercard" class="imagepayer" /> 
+											</div>
+											<div class="visa">
+											    <input type="radio" name="choixpayement" value="visa" class="appuyer"  /> <img src="../img/panier/visa.jpg" alt="visa" class="imagepayer"/>
+											</div>
+									    </div>
+								</form>
+							</div>
+
+							<div class="deuxligne">
+								<form method="post" action="traitement.php">
+							        <p>Code de carte bleu :</p>
+							        <input type="text" name="codecarte" id="codecarte" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="16" />
+								</form>
+							</div>
+
+							<div class="troisligne">
+								<p> Date d'expiration :</p>
+								<input type="date" />
+							</div>
+
+							<div class="quatreligne">
+								<p> Nom du propriétaire de la carte :</p>
+								<input type="text" name="nomproprio" id="nomproprio" />
+							</div>
+
+							<div class="cinqligne">
+								<p>Code de vérification :</p>
+   								<input type="password" name="codeveri" id="codeveri" maxlength="3" />
+							</div>
+						</div>
+						<div id="livraison">
+							<div class="sixligne">
+								<h5> Adresse de livraison </h5>
+							</div>
+							<div class="septligne">
+								<p> <strong> NOM </strong> </p>
+								<input type="text" name="nom" id="nom" />
+							</div>
+							<div class="septlignedeux">
+								<p> <strong> PR­ÉNOM </strong> </p>
+								<input type="text" name="prenom" id="prenom" />
+							</div>
+							<div class="huitligne">
+								<p> <strong> N° et nom de rue </strong> </p>
+								<input type="text" name="rue" id="rue" />
+							</div>
+							<div class="neufligne">
+								<p> <strong> code postale </strong> </p>
+								<input type="text" name="codepostale" id="codepostale"/>
+							</div>
+							<div class="dixligne">
+								<p> <strong> Ville : </strong> </p>
+								<input type="text" name="ville" id="ville"/>
+								<div class="valider">
+   									<button type="submit">Valider</button>
+   								</div>
+							</div>
+						</div>		
+					</div>
+
+
+					<div class="recapimage">
+						<div class="ligneun">
+							<div class="blockimagerecap">
+								<img src="../img/panier/1.jpg" alt="chaussure" class="imagerecap">
+							</div>
+							<div class="quantiterecap">
+
+								<p>Quantité</p>
+								<select name="quant" class="quantite">
+						           <option value="un">1</option>
+						           <option value="deux">2</option>
+						           <option value="trois">3</option>
+						           <option value="quatre-uni">4</option>
+						           <option value="cinq">5</option>
+						           <option value="six-unis">6</option>
+						           <option value="sept">7</option>
+						           <option value="huit">8</option>
+						       </select>
+
+						    </div>
+
+						    <div class="prisrecap">
+						    	<h5> 122.99€ </h5>
+						    </div>
+						</div>
+						<div class="lignedeux">
+							<div class="blockimagerecap">
+								<img src="../img/panier/2.jpg" alt="chaussure" class="imagerecap">
+							</div>
+							<div class="quantiterecap">
+
+								<p>Quantité</p>
+								<select name="quant" class="quantite">
+						           <option value="un">1</option>
+						           <option value="deux">2</option>
+						           <option value="trois">3</option>
+						           <option value="quatre-uni">4</option>
+						           <option value="cinq">5</option>
+						           <option value="six-unis">6</option>
+						           <option value="sept">7</option>
+						           <option value="huit">8</option>
+						       </select>
+
+						    </div>
+
+						    <div class="prisrecap">
+						    	<h5> 86.99€ </h5>
+						    </div>
+						</div>
+						<div class="lignetrois">
+							<div class="blockimagerecap">
+								<img src="../img/panier/3.jpg" alt="chaussure" class="imagerecap">
+							</div>
+							<div class="quantiterecap">
+
+								<p>Quantité</p>
+								<select name="quantite" class="quantite">
+						           <option value="un">1</option>
+						           <option value="deux">2</option>
+						           <option value="trois">3</option>
+						           <option value="quatre-uni">4</option>
+						           <option value="cinq">5</option>
+						           <option value="six-unis">6</option>
+						           <option value="sept">7</option>
+						           <option value="huit">8</option>
+						       </select>
+
+						    </div>
+
+						    <div class="prisrecap">
+						    	<h5> 220.99€ </h5>
+						    </div>
+						</div>
+					</div>
+				</div>
+				<div class="botside">	
+
+					<div class="suggestion">
+						<h4> Ce que vous pouvez aussi aimer : </h4>
+						<div class="articles">
+							<a href="basket/deux.html">
+								<div class="article">
+									<img src="../img/baskets/2.jpg" alt="article" class="imgarticle" />
+									<p> PI AIRE </p> 
+								</div>
+							</a>
+							<a href="basket/six.html">
+								<div class="article">
+									<img src="../img/baskets/6.jpg" alt="article" class="imgarticle"/>
+									<p> DURAMO 9 </p>
+								</div>
+							</a>
+							<a href="escarpins/six.html">
+								<div class="article">
+									<img src="../img/escarpins/6.jpg" alt="article" class="imgarticle"/>
+									<p> VIRCH RTX </p>
+								</div>
+							</a>
+							<a href="escarpins/trois.html">
+								<div class="article">
+									<img src="../img/escarpins/3.jpg" alt="article" class="imgarticle"/>
+									<p> COURIZ R.E </p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</main>
+
+
+		<footer>
+			<div class="element">
+				<p class="ecriture"> by Antoine ADJAMIDIS </p>
+				<p class="ecriture"> Donnez moi un 20/20 svp </p>
+				<p class="ecriture"> <a href="quisommesnous.html">About moi</a></p>
+				<p class="ecriture"> <a href="contacter.html">Contact</a></p>
+				<a href="https://twitter.com/Antoine_Lodene"><img src="../img/index/twitter.png" alt="twitter" class="image"></a>
+				<a href="https://www.facebook.com/antoine.adjamidis/"><img src="../img/index/facebook.png" alt="facebook" class="image"></a>
+				<a href="https://www.youtube.com/channel/UC1_4azVPzpcHT7ptccwd_fQ"><img src="../img/index/youtube.png" alt="youtube" class="image"></a>
+				<a href="https://www.pinterest.fr/pin/375065475221349170/"><img src="../img/index/pinterest.png" alt="pinterest" class="image"></a>
+			</div>
+		</footer>
+	</body>
+</html>

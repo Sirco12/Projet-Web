@@ -1,0 +1,371 @@
+* {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0; 
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 100vh;
+  margin: auto;
+
+}
+
+
+/* --------------------------- footer --------------------------*/
+
+
+
+.element {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.ecriture {
+  border-right: 3px solid black;
+  margin-top: 25px;
+  padding-right: 5%;
+}
+
+.image {
+  padding-top: 15px;
+}
+
+img {
+  width: 50px;
+}
+
+/* ------------------- lien -------------------------- */
+a {
+  text-decoration: none;
+  color: black
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active  {
+  color: black;
+}
+
+
+
+
+/*  -------------------------------------------- top -------------------------------------------- */
+
+
+/* --------------------------------- bouton valider -----------------------------*/
+
+
+
+
+.loupeimage {
+  width: 30px;
+}
+
+.modulerecherche {
+  margin-top: 20px;
+  margin-right: 20px;
+  display: flex;
+}
+
+#rechercher {
+  height: 30%;
+  margin-top: 3%;
+}
+
+
+
+
+
+.barre {
+  display: flex;
+  margin-top: 10px;
+}
+
+h3 {
+  font-style: italic;
+  text-shadow:-0.1em -0.1em 0em white;
+  margin-top: 20px;
+  font-size: 35px;
+}
+
+
+
+
+nav {
+  width: 100%;
+  font-family: 'Source code pro', Calibri, serif;
+  position: fixed;
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+
+nav > ul > li > a {
+  padding: 20px 30px;
+  color: white;
+
+}
+
+/* on aligne correctement les sous menu quand on passe la souris devant */
+nav > ul  > li:hover a {
+  padding: 15px 30px 20px 30px;
+  background-color: black;
+
+}
+
+
+nav li {
+  list-style-type: none; /*on eneleve les points*/
+}
+
+/* on met les titres cote a cote */
+nav > ul > li {
+  float: left; 
+  position: relative;
+
+}
+
+.submenu {
+  display: none; /* on fait disparaitre les sous menu / attention il faudra les faire réaparaitre */
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+
+}
+
+/* on re affiche les sous menu quand on pace la souris dessus */
+nav li:hover .submenu {  
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0px;
+  z-index: 1000;
+
+
+}
+
+
+
+/* bordure qui a entre les sous menus */
+.submenu li {
+  border-bottom: 2px solid white;
+}
+
+.submenu li a {
+  padding: 15px 30px;
+    font-size: 15px;
+    color: white;
+    width: 270px;
+
+}
+
+/* on change la couleur quand on passe sa souris  dessus */
+.menuhomme:hover {
+  border-top: 5px solid #e44d26;
+  background-color: rgba(228, 77, 38, 0.15);
+}
+
+.menufemme:hover {
+  border-top: 5px solid #0070bb;
+  background-color: rgba(000, 112, 192, 0.15);
+}
+
+.menuhomme, .menufemme {
+  font-size: 25px;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
+
+
+/* merci https://iamvdo.me/blog/animer-les-couleurs-d-une-interface */
+
+main {
+  background-color: black;
+  background-image: url("../img/index/fonddeux.jpg");
+  width: 100%;
+}
+
+
+
+
+/* --------------------------------------------- main --------------------------------------------*/
+
+
+
+.topside{
+  margin-top: 7%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+
+.recapargent {
+  width: 30%;
+  background-color: white;
+}
+
+.recapimage {
+  border: 3px solid white;
+  width: 35%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+
+.botside {
+  display: flex;
+  justify-content: center;
+}
+
+.suggestion{
+  width: 80%;
+  text-align: center;
+  color: black;
+  margin-bottom: 10%;
+  margin-top: 5%;
+}
+
+
+.articles {
+  margin-top: 2%;
+  border: 10px solid #E5E5E5;
+  background-color: #E5E5E5;
+  display: flex;
+  justify-content: space-between;
+}
+
+.article {
+  border: 5px solid black;
+  background-color: white;
+  width: 35vh;
+}
+
+h4 {
+  font-style: italic;
+  font-family: "Calibri";
+  margin-top: 20px;
+  font-size: 35px;
+  color: white;
+}
+
+.lignedeux, .lignetrois {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  color: black;
+}
+
+.ligneun {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  color: black;
+}
+
+.quantiterecap {
+  display: flex;
+  flex-direction: column;
+}
+
+.imagerecap {
+  width: 10em;
+}
+
+h5 {
+  color: black;
+}
+
+.imgarticle {
+  width: 100%;
+}
+
+
+/* ---------------------- PAYER -------------------- */
+
+.moyenpaiement {
+  display: flex;
+  flex-direction: column;
+}
+
+.recapargent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.unligne, .deuxligne, .troisligne, .quatreligne, .cinqligne, .sixligne, .septligne, .huitligne, .neufligne, .septlignedeux, .dixligne {
+  margin-top: 2%;
+  margin-bottom:2%;
+  margin-left: 4%;
+}
+
+.listepayer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.paypal, .mastercard, .visa {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.appuyer {
+  margin: auto;
+}
+
+.imagepayer {
+  margin-top: 20%;
+  width: 10vh;
+}
+
+#codeveri {
+  width: 10%;
+}
+
+.valider {
+  position: relative;
+  float: right;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+
+.cinqligne {
+  border-bottom: 1px solid black;
+  margin-right: 15px;
+  padding-bottom: 3vh;
+}
+
+#livraison {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+}
+
+h5 {
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline;
+}

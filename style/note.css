@@ -1,0 +1,113 @@
+/* --------------------------------- bouton valider -----------------------------*/
+
+
+
+
+.loupeimage {
+  width: 30px;
+}
+
+.modulerecherche {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+
+
+/*  -------------------------------------------- top -------------------------------------------- */
+
+nav {
+  width: 100%;
+  font-family: 'Source code pro', Calibri, serif;
+  position: fixed;
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+
+nav > ul > li > a {
+  padding: 20px 30px;
+  color: white;
+
+}
+
+/* on aligne correctement les sous menu quand on passe la souris devant */
+nav > ul  > li:hover a {
+  padding: 15px 30px 20px 30px;
+
+
+}
+
+
+nav li {
+  list-style-type: none; /*on eneleve les points*/
+
+
+}
+
+/* on met les titres cote a cote */
+nav > ul > li {
+  float: left; 
+  position: relative;
+
+
+
+}
+
+.submenu {
+  display: none; /* on fait disparaitre les sous menu / attention il faudra les faire réaparaitre */
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+
+
+}
+
+/* on re affiche les sous menu quand on pace la souris dessus */
+nav li:hover .submenu {  
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0px;
+  padding-bottom: 100px;
+  z-index: 1000;
+  background-color: black;
+
+}
+
+
+
+/* bordure qui a entre les sous menus */
+.submenu li {
+	border-bottom: 2px solid white;
+}
+
+.submenu li a {
+	padding: 15px 30px;
+  	font-size: 15px;
+  	color: white;
+  	width: 270px;
+
+}
+
+/* on change la couleur quand on passe sa souris  dessus */
+.menuhomme:hover {
+  border-top: 5px solid #e44d26;
+  background-color: rgba(228, 77, 38, 0.15);
+}
+
+.menufemme:hover {
+  border-top: 5px solid #0070bb;
+  background-color: rgba(000, 112, 192, 0.15);
+}
+
+.menuhomme, .menufemme {
+	font-size: 25px;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}

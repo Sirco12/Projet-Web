@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+h3 {
+  font-style: italic;
+  text-shadow:-0.1em -0.1em 0em white;
+  margin-top: 20px; 
+  font-size: 35px;
+}
+
+header {
+  color: black;
+}
+
+
+
+/* --------------------------- footer --------------------------*/
+
+footer {
+}
+
+.element {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.ecriture {
+  border-right: 3px solid black;
+  height: 20px;
+  margin-top: 25px;
+  padding-right: 5%;
+}
+
+.image {
+  padding-top: 15px;
+}
+
+
+img {
+  width: 50px;
+}
+/* ------------------- lien -------------------------- */
+a  {
+  text-decoration: none;
+  color: black;
+}
+
+main > div > p > a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active  {
+  color: black;
+}
+
+main > div > p > a:active  {
+  color: white;
+}
+
+
+
+/* --------------------------------- bouton valider -----------------------------*/
+
+
+
+
+.loupeimage {
+  width: 30px;
+}
+
+.modulerecherche {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+
+
+/*  -------------------------------------------- top -------------------------------------------- */
+
+.barre {
+  display: flex;
+  margin-top: 10px;
+}
+
+
+nav {
+  width: 100%;
+  font-family: 'Source code pro', Calibri, serif;
+  position: fixed;
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  float: top;
+}
+
+
+nav > ul > li > a {
+  padding: 20px 30px;
+  color: white;
+
+}
+
+/* on aligne correctement les sous menu quand on passe la souris devant */
+nav > ul  > li:hover a {
+  padding: 15px 30px 20px 30px;
+
+
+}
+
+
+nav li {
+  list-style-type: none; /*on eneleve les points*/
+
+
+}
+
+/* on met les titres cote a cote */
+nav > ul > li {
+  float: left; 
+  position: relative;
+
+
+
+}
+
+.submenu {
+  display: none; /* on fait disparaitre les sous menu / attention il faudra les faire réaparaitre */
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+
+
+}
+
+/* on re affiche les sous menu quand on pace la souris dessus */
+nav li:hover .submenu {  
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0px;
+  padding-bottom: 100px;
+  z-index: 1000;
+  background-color: black;
+
+}
+
+
+
+/* bordure qui a entre les sous menus */
+.submenu li {
+  border-bottom: 2px solid white;
+}
+
+.submenu li a {
+  padding: 15px 30px;
+    font-size: 15px;
+    color: white;
+    width: 270px;
+
+}
+
+/* on change la couleur quand on passe sa souris  dessus */
+.menuhomme:hover {
+  border-top: 5px solid #e44d26;
+  background-color: rgba(228, 77, 38, 0.15);
+}
+
+.menufemme:hover {
+  border-top: 5px solid #0070bb;
+  background-color: rgba(000, 112, 192, 0.15);
+}
+
+.menuhomme, .menufemme {
+  font-size: 25px;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
+
+
+
+
+
+    /* --------------------------- main --------------------------- */
+/* --------------------------- haut de la page ----------------------- */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+main{
+  background-image: url("../img/index/fonddeux.jpg");
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; 
+  font-family: "times New Roman ";
+}
+
+.hautpage {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+}
+
+
+.resultatrecherche {
+  background-color: white;
+  border-radius: 10px;
+  width: 25%;
+  text-align: center;
+}
+
+
+.articles {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+.article {
+  margin-bottom: 10vh;
+  box-shadow: 10px 10px 20px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.imagevendre{ 
+  border: 3px solid black;
+  width: 350px;
+  height: 350px;
+  margin-top: 20px;
+}
+
+.textevendre{
+  margin-top: 10px;
+  height: 110px;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.troisiemeligne, .deuxiemeligne, .premiereligne{
+  padding-top: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+
+}
+
+.premiereligne {
+  color: red;
+}
+
+.quatriemeligne {
+  padding-top: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+.troisiemeligne > p {
+  text-decoration: underline;
+  font-size: 35px;
+
+}
+
+.voir {
+  color: black;
+}
+
+.unphoto {
+  height: 100%;
+  width: 100%;
+}
+
+.ancienprix {
+  text-decoration: line-through;
+}
+
+.baspage {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: wrap;
+  justify-content: space-around;
+  margin-top: 5vh;
+  align-items: center;
+}

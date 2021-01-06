@@ -1,0 +1,325 @@
+* {
+	margin: 0; 
+	padding: 0;
+}
+
+
+h1:hover {
+	transform: scale(1.2);
+}
+
+
+main {
+	min-height: 100vh;
+  width: 100%;
+  display: block;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texte_main {
+  margin: auto;   
+	font-family: "arial";
+	font-size: 64px;
+	text-align: center;
+  width: 60vw;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+h1 {
+	font-style: italic;
+	text-shadow:-0.1em -0.1em 0em white;
+	transition: 0.2s;
+}
+
+h2 {
+  font-style: italic;
+  text-shadow:-0.1em -0.1em 0em white;
+  transition: 0.2s;
+  color: black;
+  padding-top: 3vh;
+}
+  
+
+
+
+h3 {
+  font-style: italic;
+  text-shadow:-0.1em -0.1em 0em white;
+  margin-top: 10px;
+  font-size: 35px;
+}
+
+#rechercher {
+  height: 30%;
+  margin-top: 3%;
+}
+
+
+
+/* -------------------------------------------------- slider -------------------------------------------------------------------- */
+
+
+.promo {
+  height: 30%;
+  text-align: center;
+  font-family: "arial";
+  font-size: 64px;
+}
+
+
+.slides{
+    width:calc(500px * 14);
+    animation: glisse 15s infinite;
+}
+
+.plandeux {
+  display: flex;
+  justify-content: space-around;
+}
+
+.slider{
+    height: 500px;
+    margin: 15px auto;
+    width: 500px;
+    overflow: hidden;
+
+}
+
+.slide {
+  float: left;
+}
+
+
+
+@keyframes glisse {
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(-500px);
+    }
+    20%{
+        transform: translateX(-1000px);
+    }
+    30%{
+        transform: translateX(-1500px);
+    }
+    40%{
+        transform: translateX(-2000px);
+    }
+    50%{
+        transform: translateX(-2500px);
+    }
+    60%{
+        transform: translateX(-3000px);
+    }
+    70%{
+        transform: translateX(-3500px);
+    }
+    80%{
+        transform: translateX(-4000px);
+    }
+    90%{
+        transform: translateX(-4500px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+
+}
+
+
+footer {
+}
+
+.element {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.ecriture {
+  border-right: 3px solid black;
+  height: 20px;
+  margin-top: 25px;
+  padding-right: 5%;
+}
+
+.image {
+  padding-top: 15px;
+}
+
+
+.loupeimage, .image, .panier, .connecter {
+  width: 50px;
+}
+/* ------------------- lien -------------------------- */
+a {
+  text-decoration: none;
+  color: black
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active  {
+  color: black;
+}
+
+
+/* --------------------------------- bouton valider -----------------------------*/
+
+
+
+
+.loupeimage {
+  width: 30px;
+}
+
+.modulerecherche {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+
+
+/*  -------------------------------------------- top -------------------------------------------- */
+
+.barre {
+  display: flex;
+  margin-top: 10px;
+}
+
+
+
+
+
+nav {
+  width: 100%;
+  font-family: 'Source code pro', Calibri, serif;
+  position: fixed;
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  z-index: 1000;
+
+}
+
+
+nav > ul > li > a {
+  padding: 20px 30px;
+  color: white;
+
+}
+
+/* on aligne correctement les sous menu quand on passe la souris devant */
+nav > ul  > li:hover a {
+  padding: 15px 30px 20px 30px;
+
+}
+
+
+nav li {
+  list-style-type: none; /*on eneleve les points*/
+}
+
+/* on met les titres cote a cote */
+nav > ul > li {
+  float: left; 
+  position: relative;
+
+
+}
+
+.submenu {
+  display: none; /* on fait disparaitre les sous menu / attention il faudra les faire réaparaitre */
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+
+}
+
+/* on re affiche les sous menu quand on pace la souris dessus */
+nav li:hover .submenu {  
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0px;
+  z-index: 1000;
+
+}
+
+
+
+/* bordure qui a entre les sous menus */
+.submenu li {
+	border-bottom: 2px solid white;
+}
+
+.submenu li a {
+	padding: 15px 30px;
+  	font-size: 15px;
+  	color: white;
+  	width: 270px;
+
+}
+
+/* on change la couleur quand on passe sa souris  dessus */
+.menuhomme:hover {
+  border-top: 5px solid #e44d26;
+  background-color: rgba(228, 77, 38, 0.15);
+}
+
+.menufemme:hover {
+  border-top: 5px solid #0070bb;
+  background-color: rgba(000, 112, 192, 0.15);
+}
+
+.menuhomme, .menufemme {
+	font-size: 25px;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
+
+
+.texte_main {
+  animation: inherit;
+}
+
+.couleur {
+  background-image: url(../img/index/fond.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+   }
+
+.couleurdeux {
+  background-color: black;
+  background-image: url("../img/index/fonddeux.jpg");
+  
+
+}
+
+.couleurtrois {
+  background-image: url("../img/index/fond.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+
+
+
+
