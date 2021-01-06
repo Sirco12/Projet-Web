@@ -9,26 +9,6 @@ h1:hover {
 }
 
 
-main {
-	min-height: 100vh;
-  width: 100%;
-  display: block;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.texte_main {
-  margin: auto;   
-	font-family: "arial";
-	font-size: 64px;
-	text-align: center;
-  width: 60vw;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 h1 {
 	font-style: italic;
 	text-shadow:-0.1em -0.1em 0em white;
@@ -94,6 +74,7 @@ h3 {
 }
 
 
+/* merci https://www.youtube.com/watch?v=ZsuTciVL8PU&t=390s */
 
 @keyframes glisse {
     0%{
@@ -306,7 +287,6 @@ nav li:hover .submenu {
 .couleurdeux {
   background-color: black;
   background-image: url("../img/index/fonddeux.jpg");
-  
 
 }
 
@@ -315,8 +295,37 @@ nav li:hover .submenu {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
+
 }
 
+main {
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texte_main {
+  margin: auto;   
+  font-family: "arial";
+  font-size: 64px;
+  text-align: center;
+  width: 60vw;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media (max-width: 1000px){
+  main {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 
 
